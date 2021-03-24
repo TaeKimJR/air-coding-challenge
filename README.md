@@ -2,13 +2,27 @@
 
 Thanks for taking our frontend developer challenge! From the time you receive this link, you will have **4 hours** to complete the challenge. Once complete, send a deploy URL and a link to your project's GitHub repo to [Dan Wilt](mailto:dan@air.inc).
 
-# Summary
+## Getting Started (local development)
+
+**To start the app locally, run the following commands:**
+
+1. `yarn`
+2. `yarn dev`
+
+**To run the Cypress tests locally, run the following commands:**
+
+1. In one terminal window, `yarn && yarn dev`
+2. In another terminal window, `yarn cypress:run`
+
+## Code Challenge Requirements
+
+### Summary
 
 Create and deploy a React site based on [this Figma design](https://www.figma.com/file/WSfh9nIFwBxmGg4OBVJ5PR/Frontend-Developer-Challenge?node-id=0%3A1). Use the product spec below to understand what you will be building. Your site should be committed to a **public** GitHub repository and deployed to a publicly accessible URL.
 
 If you are unable to complete everything within **4 hours**, please send whatever you have!
 
-# Product Spec
+### Product Spec
 
 You're to build a person finder! The page will show a list of people (a name, avatar and description per person). On load (without a filter applied), the page should be able to scroll the 1000 people. After typing into the input, the user should be able to scroll the page and down the list of all results (filtered people).
 
@@ -18,14 +32,14 @@ Note: Our logo (in the upper-right corner of the design) IS meant to be included
 
 [MOCK_DATA (2).json](<https://s3-us-west-2.amazonaws.com/secure.notion-static.com/090639df-57c7-4fd7-9472-67e00f8aa05f/MOCK_DATA_(2).json>)
 
-# Deliverables
+### Deliverables
 
 Once you've finished, please email [Dan Wilt](mailto:dan@air.inc) with the following:
 
 1. A public link to the deployed site
 2. A link to the public \*\*Github repo where your code can be reviewed
 
-# Evaluation Criteria
+### Evaluation Criteria
 
 The design you build **must** match the Figma link provided! Please no custom designs. We're looking for pixel perfection! We care more about matching the product spec than any of the other evaluation criteria.
 

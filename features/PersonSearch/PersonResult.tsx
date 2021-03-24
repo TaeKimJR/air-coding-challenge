@@ -1,5 +1,7 @@
 import React from "react";
 
+import Image from "next/image";
+
 import styles from "./PersonResult.module.scss";
 
 interface PersonResultProps {
@@ -11,7 +13,14 @@ interface PersonResultProps {
 const PersonResult = ({ name, avatar, description }: PersonResultProps) => {
   return (
     <div className={styles.person}>
-      <img className={styles.avatar} src={avatar} alt={`${name}'s Avatar`} />
+      <Image
+        className={styles.avatar}
+        src={avatar}
+        alt={`${name}'s Avatar`}
+        width={96}
+        height={96}
+      />
+
       <div className={styles.info}>
         <h2 className={styles.name}>{name}</h2>
 

@@ -1,3 +1,89 @@
-.container {
+.content {
+  margin-top: 105px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 74px;
+  width: 575px;
+}
+
+.title {
+  margin-bottom: 50px;
+
+  font-family: Georgia;
+  font-size: 40px;
+  line-height: 110%;
+
+  color: #102261;
+}
+
+.description {
+  margin-bottom: 43px;
+  width: 557px;
+
+  font-family: Helvetica;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.searchInput {
+  margin-bottom: 43px;
+  width: 561px;
+  padding-top: 10px;
+  padding-bottom: 9px;
+  padding-left: 16px;
+  padding-right: 16px;
+
+  border: none;
+  border-radius: 4px;
+
+  font-family: Helvetica;
+  font-size: 14px;
+  line-height: 150%;
+
+  background: rgba(239, 239, 239, 0.7);
+}
+
+.person {
+  margin-bottom: 24px;
   width: 100%;
+
+  display: flex;
+  flex-direction: row;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.avatar {
+  border-radius: 2px;
+  width: 96px;
+  height: 96px;
+
+  background: #c4c4c4;
+}
+
+.info {
+  padding-left: 24px;
+}
+
+.name {
+  margin-bottom: 8px;
+
+  font-family: Helvetica;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.025em;
+
+  color: #333333;
+}
+
+.personDescription {
+  font-family: Helvetica;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: -0.015em;
+
+  color: #666666;
 }

@@ -1,5 +1,7 @@
 import Head from "next/head";
 
+import Header from "features/Header";
+
 import styles from "./index.module.scss";
 
 export default function Home() {
@@ -10,6 +12,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      <Header />
       <main>
         <h1>Hello World</h1>
       </main>

@@ -1,7 +1,21 @@
-.searchInput {
+.container {
+  position: relative;
+
   margin-bottom: 43px;
   width: 100%;
   max-width: 561px;
+}
+
+.searchIcon {
+  position: absolute;
+  left: 16px;
+  top: 14px;
+
+  opacity: 0;
+}
+
+.input {
+  width: 100%;
   padding-top: 10px;
   padding-bottom: 9px;
   padding-left: 16px;
@@ -15,4 +29,56 @@
   line-height: 150%;
 
   background: rgba(239, 239, 239, 0.7);
+}
+
+.clearSearch {
+  position: absolute;
+  right: 0;
+  top: 12px;
+
+  width: 33px;
+  height: 16px;
+  padding-left: 8px;
+
+  border-left: 1px solid #c4c4c4;
+
+  opacity: 0;
+}
+
+.clearButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0;
+  padding: 0;
+
+  border-radius: 2px;
+  border: none;
+  outline: none;
+
+  background: transparent;
+
+  &:hover,
+  &:focus {
+    background: #c4c4c4;
+  }
+}
+
+.active {
+  .searchIcon {
+    opacity: 1;
+    transition: opacity 350ms;
+  }
+
+  .input {
+    padding-left: 32px;
+  }
+}
+
+.hasValue {
+  .clearSearch {
+    opacity: 1;
+    transition: opacity 250ms;
+  }
 }

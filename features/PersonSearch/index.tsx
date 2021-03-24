@@ -8,15 +8,18 @@ import SearchInput from "./SearchInput";
 import PersonResult from "./PersonResult";
 import PERSON_DATA from "./person-data";
 
+// Number of results to paginate by (e.g. page 1 has 20 results)
 const PAGE_SIZE = 20;
-
-const PersonSearcher = new FuzzySearch(PERSON_DATA, ["name"], {
-  caseSensitive: false,
-});
 
 const PersonSearch = () => {
   const [searchValue, setSearchValue] = React.useState("");
   const [currentPage, setCurrentPage] = React.useState(1);
+
+  const { current: PersonSearcher } = React.useRef(
+    new FuzzySearch(PERSON_DATA, ["name"], {
+      caseSensitive: false,
+    })
+  );
 
   const results = PersonSearcher.search(searchValue);
   const shownResults = results.slice(0, currentPage * PAGE_SIZE);

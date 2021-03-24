@@ -3,8 +3,8 @@
   width: 100%;
 
   padding-top: 19px;
-  padding-left: 133px;
-  padding-right: 133px;
+  padding-left: 32px;
+  padding-right: 32px;
 }
 
 .topBorder {
@@ -16,4 +16,11 @@
   height: 3.43px;
 
   background: #33dbdb;
+}
+
+@media only screen and (min-width: 856px) {
+  .container {
+    padding-left: 133px;
+    padding-right: 133px;
+  }
 }

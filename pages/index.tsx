@@ -11,6 +11,10 @@ export default function Home() {
       <Head>
         <title>Air Challenge</title>
         <link rel="icon" href="/favicon.ico" />
+        <meta
+          name="Description"
+          content="A helpful tool for finding the person you are looking for!"
+        ></meta>
       </Head>
 
       <Header />

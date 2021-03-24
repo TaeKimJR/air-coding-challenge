@@ -30,6 +30,7 @@ const SearchInput = ({ value, onChange, onClear }: SearchInputProps) => {
 
       <input
         ref={inputRef}
+        aria-label="search person by name"
         className={styles.input}
         type="text"
         placeholder="Type a name..."
@@ -48,6 +49,7 @@ const SearchInput = ({ value, onChange, onClear }: SearchInputProps) => {
       <div className={styles.clearSearch}>
         <button
           className={styles.clearButton}
+          aria-label="clear search"
           onClick={() => {
             onClear();
 

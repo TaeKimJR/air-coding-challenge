@@ -1,0 +1,19 @@
+.container {
+  position: relative;
+  width: 100%;
+
+  padding-top: 19px;
+  padding-left: 133px;
+  padding-right: 133px;
+}
+
+.topBorder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  height: 3.43px;
+
+  background: #33dbdb;
+}

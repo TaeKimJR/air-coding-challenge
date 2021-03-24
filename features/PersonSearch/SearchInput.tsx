@@ -29,6 +29,7 @@ const SearchInput = ({ value, onChange, onClear }: SearchInputProps) => {
       </div>
 
       <input
+        data-test-id="search-input"
         ref={inputRef}
         aria-label="search person by name"
         className={styles.input}
@@ -48,6 +49,7 @@ const SearchInput = ({ value, onChange, onClear }: SearchInputProps) => {
 
       <div className={styles.clearSearch}>
         <button
+          data-test-id="search-input-clear"
           className={styles.clearButton}
           aria-label="clear search"
           onClick={() => {

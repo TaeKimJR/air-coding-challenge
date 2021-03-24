@@ -12,7 +12,7 @@ interface PersonResultProps {
 
 const PersonResult = ({ name, avatar, description }: PersonResultProps) => {
   return (
-    <div className={styles.person}>
+    <div data-test-id="person-result" className={styles.person}>
       <Image
         className={styles.avatar}
         src={avatar}

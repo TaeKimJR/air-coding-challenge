@@ -1,6 +1,7 @@
 import Head from "next/head";
 
 import Header from "features/Header";
+import PersonSearch from "features/PersonSearch";
 
 import styles from "./index.module.scss";
 
@@ -23,27 +24,7 @@ export default function Home() {
           </p>
         </section>
 
-        <section>
-          <input
-            className={styles.searchInput}
-            type="text"
-            placeholder="Type a name..."
-          />
-        </section>
-
-        <section>
-          <div className={styles.person}>
-            <img
-              className={styles.avatar}
-              src="https://robohash.org/rerumliberoamet.png?size=200x200&set=set1"
-              alt="person's name"
-            />
-            <div className={styles.info}>
-              <h2 className={styles.name}>Waite Merigon</h2>
-              <p className={styles.personDescription}>Lorem Ipsum</p>
-            </div>
-          </div>
-        </section>
+        <PersonSearch />
       </main>
     </>
   );

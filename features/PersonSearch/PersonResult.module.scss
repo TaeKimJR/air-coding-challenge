@@ -1,0 +1,53 @@
+.person {
+  margin-bottom: 24px;
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.avatar {
+  border-radius: 2px;
+  width: 96px;
+  height: 96px;
+
+  background: #c4c4c4;
+}
+
+.info {
+  flex: 1;
+
+  padding-left: 24px;
+
+  overflow: hidden;
+}
+
+.name {
+  max-width: 100%;
+  margin-bottom: 8px;
+
+  font-family: Helvetica;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.025em;
+
+  color: #333333;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.description {
+  font-family: Helvetica;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: -0.015em;
+
+  color: #666666;
+}
